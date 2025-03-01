@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+    <script>
+        function mostrarRegistroEventos() {
+            document.getElementById("registro-eventos").style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    
+    <header>
+        <img src="imagenes/logo izq.png" alt="Logo Izquierdo" class="logo logo-left">
+        <h1>Iniciar Sesión</h1>
+        <img src="imagenes/logo dch.png" alt="Logo Derecho" class="logo logo-right">
+        <nav>
+            <ul>
+                <li><a href="Pagina principal.html">Inicio</a></li>
+                <li><a href="Listado eventos.html">Eventos</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="formulario-inicio">
+        <h2>Accede a tu cuenta</h2>
+        <form onsubmit="mostrarRegistroEventos(); return false;">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit" class="btn-iniciar">Iniciar Sesión</button>
+        </form>
+    </section>
+    <section id="registro-eventos" style="display: none;">
+        <h2>Selecciona los eventos a los que deseas registrarte</h2>
+        <form>
+            <label><input type="checkbox" name="eventos" value="evento1"> Conferencia de Tecnología</label><br>
+            <label><input type="checkbox" name="eventos" value="evento2"> Taller de Sostenibilidad</label><br>
+            <label><input type="checkbox" name="eventos" value="evento3"> Feria de Innovación</label><br>
+            <label><input type="checkbox" name="eventos" value="evento4"> Cultivo Sostenible</label><br>
+            <label><input type="checkbox" name="eventos" value="evento5"> Exposición de Proyectos de Alumnos</label><br>
+            <label><input type="checkbox" name="eventos" value="evento6"> Actividades de Reciclaje para Pequeños</label><br>
+            
+            <button type="submit" class="btn-registrar">Aceptar</button>
+        </form>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Portal de Eventos</p>
+            <div class="footer-contact">
+                <p><strong>Contacto:</strong></p>
+                <p>Email: contacto@eventos.com</p>
+                <p>Teléfono: +34 600 123 456</p>
+                <p>Dirección: Calle Sostenible, 123, Madrid, España</p>
+            </div>
+    
+            <div class="footer-social">
+                <p><strong>Síguenos:</strong></p>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="imagenes/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="imagenes/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="imagenes/insta.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+        
+        
+    </footer>
+</body>
+</html>
